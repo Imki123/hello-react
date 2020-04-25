@@ -20,7 +20,8 @@ function Counter() {
     }
 
     return (
-        <div>
+        <div style={{position:"relative"}}>
+            <div className="fixed-box">Counter</div>
             <input value={number} readOnly/>
             <button onClick={e=>setNumber(number +1)}>+</button>
             <button onClick={e=>setNumber(number -1)}>-</button>

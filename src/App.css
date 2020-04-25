@@ -45,23 +45,24 @@
 .layout{
   background-color: rgb(121, 121, 121);
   height:100vh;
-  padding: calc((100vh - 50vh) / 2 ) 0 ;
+  position:relative;
+  padding-top: calc((100vh - 50vh) / 2 );
 }
 .fixed-box{
   background-color: white;
   position:absolute;
-  z-index: 100;
-  top:0px;
-  right:0px;
-  border-radius: 10px;
+  display:inline;
+  top:2px;
+  right:2px;
+  border-radius: 5px;
 }
 .content{
   height:50vh;
   max-width:500px;
   margin: auto;
   padding:20px;
-  
   background-color:rgb(130, 252, 185);
+  overflow: auto;
 }
 
 fieldset{
@@ -78,6 +79,7 @@ legend{
 
 .loading{
   position:fixed;
+  z-index:100;
   width:100%;
   height:100vh;
   background-color:rgba(0,0,0,0.5);
